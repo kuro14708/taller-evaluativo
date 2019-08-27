@@ -1,0 +1,21 @@
+<script>
+        let proceso = prompt("desea registrarse o consultar")    
+        let info = {}
+    
+        if (proceso == "registrarse"){
+            let documentos = parseInt(prompt("ingrese el documento de identidad") )
+            let nombre = prompt("ingrese nombre completo") 
+            let apellidos = prompt("ingrese apellidos completo")
+            let edad = parseInt(prompt("ingrese edad completo"))
+            let peso = parseInt(prompt("ingrese peso completo"))
+            let estatura = parsefloat(prompt("ingrese estatura completo"))
+            info[documentos]= [nombre ,apellidos,edad,peso,estatura]
+            
+        }
+        
+            for (const key in info) {
+                console.log(info[key]);
+            }
+            
+        
+        </script>
